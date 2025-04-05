@@ -49,6 +49,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers(); // <<< NIET vergeten
 
 var app = builder.Build();
+// Haal de config uit de services
+var config = app.Services.GetRequiredService<IConfiguration>();
+var sqlConnectionString = !string.IsNullOrEmpty(config.GetConnectionString("DefaultConnection"));
+
+// Voeg simpele root endpoint toe
+app.MapGet("/", () => new { Status = "API is running", ConnectionStringFound = sqlConnectionString })
+    .AllowAnonymous();
 
 // Middleware pipeline
 app.UseSwagger();
@@ -60,9 +67,5 @@ app.UseAuthorization();
 app.MapControllers(); // <<< Belangrijk om je controller routes te activeren
 
 // Tijdelijke test endpoint
-var config = app.Services.GetRequiredService<IConfiguration>();
-var sqlConnectionString = !string.IsNullOrEmpty(config.GetConnectionString("DefaultConnection"));
-app.MapGet("/", () => new { Status = "API is running", ConnectionStringFound = sqlConnectionString })
-    .AllowAnonymous();
 
 app.Run();
