@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LU2-WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d22c2cd5ea0c2bc8e173d0fbece73997e81f7492")]
 [assembly: System.Reflection.AssemblyProductAttribute("LU2-WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LU2-WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
