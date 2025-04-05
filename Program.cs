@@ -60,7 +60,9 @@ app.UseAuthorization();
 app.MapControllers(); // <<< Belangrijk om je controller routes te activeren
 
 // Tijdelijke test endpoint
-var sqlConnectionString = !string.IsNullOrEmpty(builder.Configuration.GetConnectionString("DefaultConnection"));
+var config = app.Services.GetRequiredService<IConfiguration>();
+var sqlConnectionString = !string.IsNullOrEmpty(config.GetConnectionString("DefaultConnection"));
 app.MapGet("/", () => new { Status = "API is running", ConnectionStringFound = sqlConnectionString })
     .AllowAnonymous();
+
 app.Run();
