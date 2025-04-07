@@ -8,7 +8,7 @@ using System.Security.Claims;
 namespace LU2_WebApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("environments/{environmentId}/objects")]
     [Authorize]
     public class ObjectController : ControllerBase
     {
@@ -19,7 +19,6 @@ namespace LU2_WebApi.Controllers
             _db = db;
         }
 
-        // GET: api/object/{environmentId}
         [HttpGet("{environmentId}")]
         public async Task<IActionResult> GetByEnvironment(int environmentId)
         {

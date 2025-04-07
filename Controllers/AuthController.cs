@@ -9,7 +9,7 @@ using System.Text;
 namespace LU2_WebApi.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("auth")]
 public class AuthController : ControllerBase
 {
     private readonly UserManager<ApplicationUser> _userManager;
@@ -27,10 +27,10 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register([FromBody] RegisterDto dto)
+    public async Task<IActionResult> Register([FromBody] User userObject)
     {
-        var user = new ApplicationUser { UserName = dto.Username };
-        var result = await _userManager.CreateAsync(user, dto.Password);
+        var user = new ApplicationUser { UserName = userObject.email };
+        var result = await _userManager.CreateAsync(user, userObject.password);
 
         if (!result.Succeeded)
             return BadRequest(result.Errors);
@@ -42,12 +42,12 @@ public class AuthController : ControllerBase
 
 
     [HttpPost("login")]
-    public async Task<IActionResult> Login([FromBody] LoginDto dto)
+    public async Task<IActionResult> Login([FromBody] User userObject)
     {
-        var user = await _userManager.FindByNameAsync(dto.Username);
+        var user = await _userManager.FindByNameAsync(userObject.email);
         if (user == null) return Unauthorized("Gebruiker onbekend");
 
-        var result = await _signInManager.CheckPasswordSignInAsync(user, dto.Password, false);
+        var result = await _signInManager.CheckPasswordSignInAsync(user, userObject.password, false);
         if (!result.Succeeded) return Unauthorized("Wachtwoord onjuist");
 
         var token = GenerateJwtToken(user);

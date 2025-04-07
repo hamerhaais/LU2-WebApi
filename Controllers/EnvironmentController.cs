@@ -7,8 +7,8 @@ using System.Security.Claims;
 
 namespace LU2_WebApi.Controllers;
 
+[Route("environments")]
 [ApiController]
-[Route("api/[controller]")]
 [Authorize]
 public class EnvironmentController : ControllerBase
 {
@@ -40,9 +40,12 @@ public class EnvironmentController : ControllerBase
         var exists = await _db.Users.AnyAsync(u => u.Id == userId);
         if (!exists)
         {
-            Console.WriteLine("❌ UserId bestaat NIET in AspNetUsers tabel!");
+            Console.WriteLine("UserId bestaat NIET in AspNetUsers tabel!");
             return NotFound("UserId bestaat niet in database");
         }
+        var existingCount = await _db.Environments.CountAsync(e => e.UserId == userId);
+        if (existingCount >= 5)
+            return BadRequest("Je mag maximaal 5 omgevingen aanmaken.");
 
         var env = new Environment2D
         {
@@ -59,7 +62,7 @@ public class EnvironmentController : ControllerBase
         }
         catch (Exception ex)
         {
-            Console.WriteLine("❌ EX bij save: " + ex.Message);
+            Console.WriteLine("EX bij save: " + ex.Message);
             return StatusCode(500, ex.InnerException?.Message ?? ex.Message);
         }
     }

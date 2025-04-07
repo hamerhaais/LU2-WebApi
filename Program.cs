@@ -10,7 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add EF Core with SQL connection
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), sqlOptions =>
+        sqlOptions.EnableRetryOnFailure()));
 
 // Add Identity
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
