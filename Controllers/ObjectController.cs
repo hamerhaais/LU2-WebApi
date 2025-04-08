@@ -19,7 +19,7 @@ namespace LU2_WebApi.Controllers
             _db = db;
         }
 
-        [HttpGet("{environmentId}")]
+        [HttpGet]
         public async Task<IActionResult> GetByEnvironment(int environmentId)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
