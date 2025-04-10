@@ -10,11 +10,11 @@ namespace LU2_WebApi.Models
         [Required]
         public string Name { get; set; } = string.Empty;
 
-        // Verwijzing naar de eigenaar (de user die is ingelogd)
-        [Required]
-        public string UserId { get; set; } = string.Empty;
+        public int MaxHeight;
+        public int MaxLength;
 
+        [Required]
         [ForeignKey("UserId")]
-        public ApplicationUser? User { get; set; }
+        public string UserId { get; set; } = string.Empty;
     }
 }
