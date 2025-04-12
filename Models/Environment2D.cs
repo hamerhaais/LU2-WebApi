@@ -10,11 +10,12 @@ namespace LU2_WebApi.Models
         [Required]
         public string Name { get; set; } = string.Empty;
 
-        public int MaxHeight;
-        public int MaxLength;
+        public int MaxX { get; set; }
+        public int MaxY { get; set; }
 
-        [Required]
         [ForeignKey("UserId")]
-        public string UserId { get; set; } = string.Empty;
+        public string? UserId { get; set; }
+        public ApplicationUser? User { get; set; }
+
     }
 }
