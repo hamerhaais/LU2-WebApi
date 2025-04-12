@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "9vqtr7up5rWcWatfzN3hmEshn2Y2hI1T6GBg3gg3je0=",
+  "Source": "LU2-WebApi",
+  "BasePath": "_content/LU2-WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
