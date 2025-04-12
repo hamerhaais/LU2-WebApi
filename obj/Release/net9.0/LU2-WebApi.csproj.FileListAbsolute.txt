@@ -1,0 +1,8 @@
+C:\Users\Stan Braks\Desktop\LU2-WebApi\obj\Release\net9.0\LU2-WebApi.csproj.AssemblyReference.cache
+C:\Users\Stan Braks\Desktop\LU2-WebApi\obj\Release\net9.0\LU2-WebApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Stan Braks\Desktop\LU2-WebApi\obj\Release\net9.0\LU2-WebApi.AssemblyInfoInputs.cache
+C:\Users\Stan Braks\Desktop\LU2-WebApi\obj\Release\net9.0\LU2-WebApi.AssemblyInfo.cs
+C:\Users\Stan Braks\Desktop\LU2-WebApi\obj\Release\net9.0\LU2-WebApi.csproj.CoreCompileInputs.cache
+C:\Users\Stan Braks\Desktop\LU2-WebApi\obj\Release\net9.0\LU2-WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Stan Braks\Desktop\LU2-WebApi\obj\Release\net9.0\LU2-WebApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Stan Braks\Desktop\LU2-WebApi\obj\Release\net9.0\LU2-WebApi.sourcelink.json
