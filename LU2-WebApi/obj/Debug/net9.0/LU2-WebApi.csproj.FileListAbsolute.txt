@@ -171,3 +171,4 @@ C:\Users\Stan Braks\Desktop\LU2-WebApi\LU2-WebApi\obj\Debug\net9.0\refint\LU2-We
 C:\Users\Stan Braks\Desktop\LU2-WebApi\LU2-WebApi\obj\Debug\net9.0\LU2-WebApi.pdb
 C:\Users\Stan Braks\Desktop\LU2-WebApi\LU2-WebApi\obj\Debug\net9.0\LU2-WebApi.genruntimeconfig.cache
 C:\Users\Stan Braks\Desktop\LU2-WebApi\LU2-WebApi\obj\Debug\net9.0\ref\LU2-WebApi.dll
+C:\Users\Stan Braks\Desktop\LU2-WebApi\LU2-WebApi\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

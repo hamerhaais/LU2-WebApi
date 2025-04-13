@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{396255E4-9BD2-4D6B-B6B3-78D34339DD19}|TestProject1\\TestProject1.csproj|c:\\users\\stan braks\\desktop\\lu2-webapi\\testproject1\\environmentvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396255E4-9BD2-4D6B-B6B3-78D34339DD19}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\environmentvalidatortests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F685D3B2-01B6-722F-B5DA-F59679E13523}|LU2-WebApi\\LU2-WebApi.csproj|c:\\users\\stan braks\\desktop\\lu2-webapi\\lu2-webapi\\validators\\environmentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F685D3B2-01B6-722F-B5DA-F59679E13523}|LU2-WebApi\\LU2-WebApi.csproj|solutionrelative:lu2-webapi\\validators\\environmentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396255E4-9BD2-4D6B-B6B3-78D34339DD19}|TestProject1\\TestProject1.csproj|c:\\users\\stan braks\\desktop\\lu2-webapi\\testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{396255E4-9BD2-4D6B-B6B3-78D34339DD19}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\testproject1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{396255E4-9BD2-4D6B-B6B3-78D34339DD19}|TestProject1\\TestProject1.csproj|c:\\users\\stan braks\\desktop\\lu2-webapi\\testproject1\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{396255E4-9BD2-4D6B-B6B3-78D34339DD19}|TestProject1\\TestProject1.csproj|solutionrelative:testproject1\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F685D3B2-01B6-722F-B5DA-F59679E13523}|LU2-WebApi\\LU2-WebApi.csproj|c:\\users\\stan braks\\desktop\\lu2-webapi\\lu2-webapi\\lu2-webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F685D3B2-01B6-722F-B5DA-F59679E13523}|LU2-WebApi\\LU2-WebApi.csproj|solutionrelative:lu2-webapi\\lu2-webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnvironmentValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\LU2-WebApi\\Validators\\EnvironmentValidator.cs",
+              "RelativeDocumentMoniker": "LU2-WebApi\\Validators\\EnvironmentValidator.cs",
+              "ToolTip": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\LU2-WebApi\\Validators\\EnvironmentValidator.cs",
+              "RelativeToolTip": "LU2-WebApi\\Validators\\EnvironmentValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T17:11:21.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnvironmentValidatorTests.cs",
+              "DocumentMoniker": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\TestProject1\\EnvironmentValidatorTests.cs",
+              "RelativeDocumentMoniker": "TestProject1\\EnvironmentValidatorTests.cs",
+              "ToolTip": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\TestProject1\\EnvironmentValidatorTests.cs",
+              "RelativeToolTip": "TestProject1\\EnvironmentValidatorTests.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwC8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T17:09:00.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TestProject1",
+              "DocumentMoniker": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\TestProject1\\TestProject1.csproj",
+              "RelativeDocumentMoniker": "TestProject1\\TestProject1.csproj",
+              "ToolTip": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\TestProject1\\TestProject1.csproj",
+              "RelativeToolTip": "TestProject1\\TestProject1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-13T17:01:07.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LU2-WebApi",
+              "DocumentMoniker": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\LU2-WebApi\\LU2-WebApi.csproj",
+              "RelativeDocumentMoniker": "LU2-WebApi\\LU2-WebApi.csproj",
+              "ToolTip": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\LU2-WebApi\\LU2-WebApi.csproj",
+              "RelativeToolTip": "LU2-WebApi\\LU2-WebApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-13T17:01:03.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MSTestSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\TestProject1\\MSTestSettings.cs",
+              "RelativeDocumentMoniker": "TestProject1\\MSTestSettings.cs",
+              "ToolTip": "C:\\Users\\Stan Braks\\Desktop\\LU2-WebApi\\TestProject1\\MSTestSettings.cs",
+              "RelativeToolTip": "TestProject1\\MSTestSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T10:23:49.901Z",
+              "EditorCaption": ""
             }
           ]
         }
