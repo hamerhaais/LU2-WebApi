@@ -35,9 +35,7 @@ public class AuthController : ControllerBase
         if (!result.Succeeded)
             return BadRequest(result.Errors);
 
-        // Token genereren direct na registratie
-        var token = GenerateJwtToken(user);
-        return Ok(new { token });
+        return Ok(new { message = "Registration successful" });
     }
 
 

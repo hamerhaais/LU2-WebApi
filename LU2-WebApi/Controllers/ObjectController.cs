@@ -37,7 +37,6 @@ namespace LU2_WebApi.Controllers
             return Ok(objects);
         }
 
-        // POST: api/object
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] Object2D obj)
         {
@@ -63,7 +62,6 @@ namespace LU2_WebApi.Controllers
             return Ok(newObj);
         }
 
-        // DELETE: api/object/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -82,7 +80,6 @@ namespace LU2_WebApi.Controllers
             return Ok("Object verwijderd");
         }
 
-        // PUT: api/object/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] Object2D updated)
         {
@@ -95,33 +92,12 @@ namespace LU2_WebApi.Controllers
             if (obj == null)
                 return NotFound("Object niet gevonden of geen toegang");
 
-            // Update de eigenschappen
             obj.Type = updated.Type;
             obj.X = updated.X;
             obj.Y = updated.Y;
 
             await _db.SaveChangesAsync();
             return Ok(obj);
-        }
-
-        [HttpPost("bulk")]
-        public async Task<IActionResult> SaveAllObjects([FromBody] List<Object2D> objects)
-        {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-            // Controleer of alle objecten in environments zitten die van deze user zijn
-            var validEnvIds = await _db.Environments
-                .Where(e => e.UserId == userId)
-                .Select(e => e.Id)
-                .ToListAsync();
-
-            if (!objects.All(o => validEnvIds.Contains(o.EnvironmentId)))
-                return Forbid("Een of meer objecten horen niet bij jouw omgevingen");
-
-            _db.Objects.AddRange(objects);
-            await _db.SaveChangesAsync();
-
-            return Ok(objects);
         }
 
         [HttpDelete]

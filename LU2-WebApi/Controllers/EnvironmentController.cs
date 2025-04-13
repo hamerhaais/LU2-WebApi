@@ -39,12 +39,6 @@ public class EnvironmentController : ControllerBase
         if (string.IsNullOrWhiteSpace(environment.Name) || environment.Name.Length > 25)
             return BadRequest("Naam moet tussen 1 en 25 karakters zijn.");
 
-        if (environment.MaxX < 20 || environment.MaxX > 200)
-            return BadRequest("Lengte moet tussen 20 en 200 zijn.");
-
-        if (environment.MaxY < 10 || environment.MaxY > 100)
-            return BadRequest("Hoogte moet tussen 10 en 100 zijn.");
-
         var exists = await _db.Users.AnyAsync(u => u.Id == userId);
         if (!exists)
         {
@@ -75,8 +69,6 @@ public class EnvironmentController : ControllerBase
             return StatusCode(500, ex.InnerException?.Message ?? ex.Message);
         }
     }
-
-
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
