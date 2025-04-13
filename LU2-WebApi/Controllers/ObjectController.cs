@@ -123,5 +123,29 @@ namespace LU2_WebApi.Controllers
 
             return Ok(objects);
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeleteAll(int environmentId)
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            var environment = await _db.Environments
+                .FirstOrDefaultAsync(e => e.Id == environmentId && e.UserId == userId);
+
+            if (environment == null)
+                return NotFound("Environment niet gevonden of geen toegang");
+
+            var objects = await _db.Objects
+                .Where(o => o.EnvironmentId == environmentId)
+                .ToListAsync();
+
+            if (!objects.Any())
+                return NotFound("Geen objecten gevonden in deze environment");
+
+            _db.Objects.RemoveRange(objects);
+            await _db.SaveChangesAsync();
+
+            return Ok("Alle objecten zijn verwijderd");
+        }
     }
 }
